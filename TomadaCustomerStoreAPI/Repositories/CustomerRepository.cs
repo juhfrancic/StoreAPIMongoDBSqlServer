@@ -21,7 +21,7 @@ namespace TomadaStoreCustomerAPI.Repositories
         {
             try
             {
-                var sqlSelect = @"SELECT Id, FirstName, LAstName, Email, PhoneNumber
+                var sqlSelect = @"SELECT Id, FirstName, LastName, Email, PhoneNumber, Situacao
                                   FROM Customers";
 
                 var customers = await _connection.QueryAsync<CustomerResponseDTO>(sqlSelect);
@@ -38,7 +38,7 @@ namespace TomadaStoreCustomerAPI.Repositories
         {
             try
             {
-                var sql = @"SELECT Id, FirstName, LastName, Email, PhoneNumber 
+                var sql = @"SELECT Id, FirstName, LastName, Email, PhoneNumber, Situacao
                         FROM Customers
                         WHERE Id = @Id";
 
@@ -71,7 +71,7 @@ namespace TomadaStoreCustomerAPI.Repositories
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error inserting customer: {ex.Message}");
+                _logger.LogError($"Error inserting customer: {ex.Message}");  
             }
         }
 
@@ -79,8 +79,8 @@ namespace TomadaStoreCustomerAPI.Repositories
         {
             var sql = @"UPDATE Customers
                         SET Situacao = CASE Situacao WHEN 0 THEN 1
-                                                 WHEN 1 THEN 0
-                                                 END
+                        WHEN 1 THEN 0
+                        END
                         WHERE Id = @Id;";
 
             await _connection.ExecuteAsync(sql, new { Id = id });

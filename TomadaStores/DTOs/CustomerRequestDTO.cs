@@ -10,6 +10,6 @@ namespace TomadaStore.Models.DTOs
         public string LastName { get; init; }
         public string Email { get; init; }
         public string? PhoneNumber { get; init; }
-        public bool Situacao { get; set; }
+        public bool Situacao { get; set; } = true;
     }
 }
