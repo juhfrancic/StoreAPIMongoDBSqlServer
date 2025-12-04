@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TomadaStore.Utils": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

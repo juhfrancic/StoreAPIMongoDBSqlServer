@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="TomadaCustomerStoreAPI/TomadaStoreCustomerAPI.csproj" />
+  <Project Path="TomadaStoreProductAPI/TomadaStoreProductAPI.csproj" />
+  <Project Path="TomadaStores/TomadaStore.Models.csproj" />
+  <Project Path="TomadStoreSaleAPI/TomadStoreSaleAPI.csproj" />
+</Solution>
