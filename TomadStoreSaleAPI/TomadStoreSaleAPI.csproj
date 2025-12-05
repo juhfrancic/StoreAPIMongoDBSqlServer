@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TomadaStoreProductAPI\TomadaStoreProductAPI.csproj" />
+    <ProjectReference Include="..\TomadaStores\TomadaStore.Models.csproj" />
+  </ItemGroup>
+
 </Project>

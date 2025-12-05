@@ -6,11 +6,11 @@ namespace TomadaStore.Models.Models
 {
     public class Customer
     {
-        public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        public string? PhoneNumber { get; set; }
+        public int Id { get; private set; }
+        public string FirstName { get; private set; }
+        public string LastName { get; private set; }
+        public string Email { get; private set; }
+        public string? PhoneNumber { get; private set; }
         public bool Situacao { get; set; }
 
         public Customer(string firstName, string lastName, string email)
@@ -21,10 +21,23 @@ namespace TomadaStore.Models.Models
             Situacao = true;
         }
 
-        public Customer(string firstName, string lastName, 
-            string email, string? phoneNumber) 
+        public Customer(string firstName, string lastName,
+                        string email, string? phoneNumber)
             : this(firstName, lastName, email)
         {
+            PhoneNumber = phoneNumber;
+        }
+
+        public Customer(int id,
+                        string firstName,
+                        string lastName,
+                        string email,
+                        string? phoneNumber)
+        {
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
             PhoneNumber = phoneNumber;
         }
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TomadaStore.Models.DTOs
+namespace TomadaStore.Models.DTOs.Customer
 {
     public class CustomerRequestDTO
     {

@@ -4,15 +4,15 @@ using System.Text;
 
 namespace TomadaStore.Models.Models
 {
-    public class Sales
+    public class Sale
     {
         public string Id { get; private set; }
         public Customer Customer { get; private set; }
-        public List<Products> Products { get; private set; }
+        public List<Product> Products { get; private set; }
         public DateTime SaleDate { get; private set; }
         public decimal TotalPrice { get; private set; }
 
-        public Sales(Customer customer, List<Products> products, decimal totalPrice)
+        public Sale(Customer customer, List<Product> products, decimal totalPrice)
         {
             Customer = customer;
             Products = products;

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TomadaStore.Models.DTOs
+namespace TomadaStore.Models.DTOs.Customer
 {
     public class CustomerResponseDTO
     {
-        public string Id { get; init; }
+        public int Id { get; init; }
         public string FirstName { get; init; }
         public string LastName { get; init; }
         public string Email { get; init; }

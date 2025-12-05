@@ -1,6 +1,6 @@
 ﻿using Dapper;
 using Microsoft.Data.SqlClient;
-using TomadaStore.Models.DTOs;
+using TomadaStore.Models.DTOs.Customer;
 using TomadaStore.Models.Models;
 using TomadaStoreCustomerAPI.Data;
 using TomadaStoreCustomerAPI.Services;
