@@ -7,13 +7,13 @@ namespace TomadStoreSaleAPI.Controllers.v1
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    public class SaleController : ControllerBase
+    public class SalesController : ControllerBase
     {
-        private readonly ILogger<SaleController> _logger;
+        private readonly ILogger<SalesController> _logger;
         private readonly ISaleService _saleService;
 
 
-        public SaleController(ILogger<SaleController> logger,
+        public SalesController(ILogger<SalesController> logger,
                                 ISaleService saleService)
         {
             _logger = logger;

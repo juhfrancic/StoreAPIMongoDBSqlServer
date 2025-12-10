@@ -16,6 +16,7 @@ builder.Services.Configure<MongoDBSettings>(
 
 builder.Services.AddSingleton<ConnectionDBSale>();
 
+
 builder.Services.AddScoped<ISaleRepository, SaleRepository>();
 builder.Services.AddScoped<ISaleService, SaleService>();
 

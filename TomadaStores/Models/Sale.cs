@@ -6,18 +6,17 @@ namespace TomadaStore.Models.Models
 {
     public class Sale
     {
-        public string Id { get; private set; }
-        public Customer Customer { get; private set; }
-        public List<Product> Products { get; private set; }
-        public DateTime SaleDate { get; private set; }
+        public string SaleId { get; private set; }
+        public string ProductId { get; private set; }
         public decimal TotalPrice { get; private set; }
+        public string Situation { get; private set; } = string.Empty;
 
-        public Sale(Customer customer, List<Product> products, decimal totalPrice)
+        public Sale(string saleId, string productId, decimal totalPrice, string situation)
         {
-            Customer = customer;
-            Products = products;
-            SaleDate = DateTime.UtcNow;
+            SaleId = saleId;
+            ProductId = productId;
             TotalPrice = totalPrice;
+            Situation = situation;
         }
     }
 }

@@ -7,7 +7,7 @@ namespace TomadStoreSaleAPI.Repositories.Interfaces
 {
     public interface ISaleRepository
     {
-        Task CreateSaleAsync(CustomerResponseDTO custumerDto, ProductResponseDTO productDto, SaleRequestDTO saleDto);
-        Task<List<Sale>> GetAllSalesAsync();
+        //Task CreateSaleAsync(CustomerResponseDTO custumerDto, ProductResponseDTO productDto, SaleRequestDTO saleDto);
+        //Task<List<Sale>> GetAllSalesAsync();
     }
 }
